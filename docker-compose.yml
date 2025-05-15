@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  file-management-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: file-management-service
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=default
+      - DB_HOST=database-1.cnnyjlzfack4.ap-northeast-2.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_NAME=postgres
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+      - AWS_ACCESS_KEY=...
+      - AWS_SECRET_KEY=...
+      - AWS_REGION=ap-northeast-2
+      - AWS_S3_BUCKET=practice-250515
+      - AWS_S3_BASE_URL=https://practice-250515.s3.ap-northeast-2.amazonaws.com
