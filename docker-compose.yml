@@ -10,13 +10,13 @@ services:
       - "8080:8080"
     environment:
       - SPRING_PROFILES_ACTIVE=default
-      - DB_HOST=database-1.cnnyjlzfack4.ap-northeast-2.rds.amazonaws.com
+      - DB_HOST=database-jh.c3q4yy08oqmm.ap-northeast-2.rds.amazonaws.com
       - DB_PORT=5432
       - DB_NAME=postgres
-      - DB_USERNAME=postgres
-      - DB_PASSWORD=postgres
+      - DB_USERNAME=javainterview
+      - DB_PASSWORD=javainterview
       - AWS_ACCESS_KEY=...
       - AWS_SECRET_KEY=...
       - AWS_REGION=ap-northeast-2
-      - AWS_S3_BUCKET=practice-250515
-      - AWS_S3_BASE_URL=https://practice-250515.s3.ap-northeast-2.amazonaws.com
+      - AWS_S3_BUCKET=app-bucket-jh
+      - AWS_S3_BASE_URL=https://app-bucket-jh.s3.ap-northeast-2.amazonaws.com
